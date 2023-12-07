@@ -18,6 +18,9 @@
     console.log(promptText);
     let colorValue = document.getElementById('color-value');
     console.log(colorValue);
+    colorValue.addEventListener('change', function () {
+      promptText.textContent = colorValue.value;
+    })
   </script>
 </body>
 </html>
